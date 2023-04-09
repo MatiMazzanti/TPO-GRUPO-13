@@ -121,6 +121,12 @@ h2 span{
     transition: 1s;
     height: 100%;
 }
+.osaka iframe{
+    width: 100%;
+    cursor: pointer;
+    transition: 1s;
+    height: 100%;
+}
 .osaka img:hover{
     transform: scale(1.1);
 }
