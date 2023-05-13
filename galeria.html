@@ -1,123 +1,121 @@
 <!DOCTYPE html>
+<html lang="es">
 
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Galeria</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!--Estilo personalisado-->
-        <link rel="stylesheet" href="/CSS/style.css">
-        <!--FONT AWESONE-->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
-        <script src="https://unpkg.com/scrollreveal"></script>
-        <!--Google Fonts-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Noto+Sans:wght@100&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <div class="menu-btn">
-            <i class="fas fa-bars"></i>
-        </div>
-        <main class="container">
-            <nav class="nav-main">
-                <img class="nav-brand" src="/IMG/afa.png" alt="">
-                <ul class="nav-menu">
-                    <li>
-                        <a href="">Inicio</a>
-                    </li>
-                    <li>
-                        <a href="/galeria.html">Fotos</a>
-                    </li>
-                    <li>
-                        <a href="/videos.html">Videos</a>
-                    </li>
-                    <li>
-                        <a href="#">Contactanos</a>
-                    </li>
-                </ul>
-                <ul class="nav-menu-right">
-                    <li>
-                        <a href="#">
-                            <i class="fas fa-search"></i>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria</title>
+    <!--Estilo personalisado-->
+    <link rel="stylesheet" href="CSS/style.css">
+    <!--FONT AWESONE-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Noto+Sans:wght@100&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+    </div>
+    <div class="container">
+        <nav class="nav-main">
+            <img class="nav-brand" src="/IMG/afa.png" alt="">
+            <ul class="nav-menu">
+                <li>
+                    <a href="">Inicio</a>
+                </li>
+                <li>
+                    <a href="/galeria.html">Fotos</a>
+                </li>
+                <li>
+                    <a href="/videos.html">Videos</a>
+                </li>
+                <li>
+                    <a href="#">Contactanos</a>
+                </li>
+            </ul>
+            <ul class="nav-menu-right">
+                <li>
+                    <a href="#">
+                        <i class="fas fa-search"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <main>
             <h1>El camino a la gloria eterna</h1>
             <div class="fulimg" id="fulimgbox">
-                <img src="/IMG/fasegrupo1.jpg"  id="fulimg" alt="">
+                <img src="/IMG/fasegrupo1.jpg" id="fulimg" alt="">
                 <span onclick="closeImg()">X</span>
             </div>
-
-            <h2> <span>Fase de grupos</span></h2>
+            <h2><span>Fase de grupos</span></h2>
             <div class="osaka">
-                <img src="/IMG/fasegrupo1.jpg" onclick="openImg(this.src)">
-                <img src="/IMG/fasegrupo2.jpg" onclick="openImg(this.src)">
-                <img src="/IMG/fasegrupo3.jpg" onclick="openImg(this.src)">
+                <img src="IMG/fasegrupo1.jpg" onclick="openImg(this.src)">
+                <img src="IMG/fasegrupo2.jpg" onclick="openImg(this.src)">
+                <img src="IMG/fasegrupo3.jpg" onclick="openImg(this.src)">
             </div>
-
-            <h2> <span>Argentina - Australia</span></h2>
+            <h2><span>Argentina - Australia</span></h2>
             <div class="osaka">
-                <img src="/IMG/australia1.jpg" onclick="openImg(this.src)">
-                <img src="/IMG/australia2.jpg" onclick="openImg(this.src)">
-                <img src="/IMG/australia3.jpg" onclick="openImg(this.src)">
+                <img src="IMG/australia1.jpg" onclick="openImg(this.src)">
+                <img src="IMG/australia2.jpg" onclick="openImg(this.src)">
+                <img src="IMG/australia3.jpg" onclick="openImg(this.src)">
             </div>
-
-            <h2> <span>Argentina - Paises Bajos</span></h2>
+            <h2><span>Argentina - Paises Bajos</span></h2>
             <div class="osaka">
-                <img src="/IMG/paisesbajos1.jpg" onclick="openImg(this.src)">
-                <img src="/IMG/paisesbajos2.jpg" onclick="openImg(this.src)">
-                <img src="/IMG/paisesbajos3.jpg" onclick="openImg(this.src)">
+                <img src="IMG/paisesbajos1.jpg" onclick="openImg(this.src)">
+                <img src="IMG/paisesbajos2.jpg" onclick="openImg(this.src)">
+                <img src="IMG/paisesbajos3.jpg" onclick="openImg(this.src)">
             </div>
-
-            <h2> <span>Argentina - Croacia</span></h2>
+            <h2><span>Argentina - Croacia</span></h2>
             <div class="osaka">
-                <img src="/IMG/croacia1.jpg" onclick="openImg(this.src)">
-                <img src="/IMG/croacia2.jpg" onclick="openImg(this.src)">
-                <img src="/IMG/croacia3.jpg" onclick="openImg(this.src)">
+                <img src="IMG/croacia1.jpg" onclick="openImg(this.src)">
+                <img src="IMG/croacia2.jpg" onclick="openImg(this.src)">
+                <img src="IMG/croacia3.jpg" onclick="openImg(this.src)">
             </div>
-        
-            <h2> <span>Argentina - Francia</span></h2>
+            <h2><span>Argentina - Francia</span></h2>
             <div class="osaka">
-                <img src="/IMG/francia1.jpg" onclick="openImg(this.src)">
-                <img src="/IMG/francia2.jpg" onclick="openImg(this.src)">
-                <img src="/IMG/francia3.jpg" onclick="openImg(this.src)">
+                <img src="IMG/francia1.jpg" onclick="openImg(this.src)">
+                <img src="IMG/francia2.jpg" onclick="openImg(this.src)">
+                <img src="IMG/francia3.jpg" onclick="openImg(this.src)">
             </div>
-
-            <h2> <span>La fiesta con el pueblo</span></h2>
+            <h2><span>La fiesta con el pueblo</span></h2>
             <div class="osaka">
-                <img src="/IMG/pueblo1.jpg" onclick="openImg(this.src)">
-                <img src="/IMG/pueblo2.jpg" onclick="openImg(this.src)">
-                <img src="/IMG/pueblo3.jpg" onclick="openImg(this.src)">
+                <img src="IMG/pueblo1.jpg" onclick="openImg(this.src)">
+                <img src="IMG/pueblo2.jpg" onclick="openImg(this.src)">
+                <img src="IMG/pueblo3.jpg" onclick="openImg(this.src)">
             </div>
-
-            <footer class="footer">
-                <ul class="footer-ul redes">
-                    <li>
-                        <a target="_blank" href="#">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="#">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="#">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </li>
-                </ul>
-                <ul class="footer-ul">
-                    <li>Telefono: +54 1123456789</li>
-                    <li><i class="fa-sharp fa-regular fa-copyright" style="color: #ffffff;"></i></li>
-                </ul>
-            </footer>
         </main>
-        <script src="/JS/script.js"></script>
-        <script src="/JS/fotos.js"></script>
-    </body>
+        <footer class="footer">
+            <ul class="footer-ul redes">
+                <li>
+                    <a target="_blank" href="#">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="#">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="#">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+            <ul class="footer-ul">
+                <li>Telefono: +54 1123456789</li>
+                <li><i class="fa-sharp fa-regular fa-copyright" style="color: #ffffff;"></i></li>
+            </ul>
+        </footer>
+    </div>
+    <script src="/JS/fotos.js"></script>
+    <script src="/JS/script.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.js"></script>
+</body>
+
 </html>

@@ -1,161 +1,170 @@
 <!DOCTYPE html>
+<html lang="es">
 
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Contactanos</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!--Estilo personalisado-->
-        <link rel="stylesheet" href="CSS/styleContacto.css">
-        <!-- CSS animado -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-        <!--FONT AWESONE-->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
-        <script src="https://unpkg.com/scrollreveal"></script>
-        <!--Google Fonts-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Noto+Sans:wght@100&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <!-- Nav -->
-        <div class="menu-btn">
-            <i class="fas fa-bars"></i>
-        </div>
-        <main class="container">
-            <nav class="nav-main">
-                <img class="nav-brand" src="IMG/afa.png" alt="">
-                <ul class="nav-menu">
-                    <li>
-                        <a href="index.html">Inicio</a>
-                    </li>
-                    <li>
-                        <a href="galeria.html">Galeria</a>
-                    </li>
-                    <li>
-                        <a href="videos.html">Videos</a>
-                    </li>
-                    <li>
-                        <a href="contactanos.html">Contactanos</a>
-                    </li>
-                </ul>
-                <ul class="nav-menu-right">
-                    <li>
-                        <a href="#">
-                            <i class="fas fa-search"></i>
-                        </a>
-                    </li>
-                </ul>
-        </main>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactanos</title>
+    <!--Estilo personalisado-->
+    <link rel="stylesheet" href="CSS/styleContacto.css">
+    <!-- CSS animado -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!--FONT AWESONE-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Noto+Sans:wght@100&display=swap"
+        rel="stylesheet">
+</head>
 
-        <!-- Form -->
-     <div class="formi" id="formi">
-        <div class="form" id="form">
-         <form action="enviado.html" method="post" target="_blank">
-                <h3>Contactanos</h3>
-                <br>
-                <p>
-                    <label>Nombre:</label>
-                    <input type="text" class="input" name="nombre" minlength="4" max="20" required="" pattern="[a-zA-Z]+">
-                </p>
-                <p>
-                    <label>Mail:</label>
-                    <input type="email" class="button" name="email">
-                </p>
-                <p>
-                    <label>Telefono:</label>
-                    <input type="tel" class="input" name="telefono">
-                </p>
-                <p>
-                    <label>Jugador Favorito:</label></label>
-                    <br>
-                    <br>
-                    <select>
-                         <option disabled selected=" ">Elija uno</opttion>
-                       <optgroup label="Arqueros"></optgroup>
-                         <option>Emiliano Martínez</option>
-                         <option>Gerónimo Rulli</option>
-                         <option>Franco Armani</option>
-                       <optgroup label="Defensores"></optgroup>
-                         <option>Nahuel Molina</option>
-                         <option>Gonzalo Montiel</option>
-                         <option>Cristian Romero</option>
-                         <option>Germán Pezzella</option>
-                         <option>Nicolás Otamendi</option>
-                         <option>Lisandro Martínez</option>
-                         <option>Marcos Acuña</option>
-                         <option>Nicolás Tagliafico</option>
-                       <optgroup label="Mediocampistas"></optgroup>
-                         <option>Juan Foyth</option>
-                         <option>Rodrigo De Paul</option>
-                         <option>Leandro Paredes</option>
-                         <option>Alexis Mac Allister</option>
-                         <option>Guido Rodríguez</option>
-                         <option>Alejandro Gómez</option>
-                         <option>Enzo Fernández</option>
-                         <option>Exequiel Palacios</option>
-                         <option>Thiago Almada</option>
-                       <optgroup label="Delanteros"></optgroup>
-                         <option>Lionel Messi</option>
-                         <option>Ángel Di María</option>
-                         <option>Lautaro Martínez</option>
-                         <option>Julián Álvarez</option>
-                         <option>Paulo Dybala</option>
-                         <option>Ángel Correa</option>
-                    </select>
-                </p>
-                <p class="block">
-                    <label>Mensaje para la Selección:</label>
-                    <textarea name="mensaje" class="textarea" rows="3" required="""></textarea>
-                </p>
-                <p class="block">
-                    <button type="submit">
-                        Enviar
-                    </button>
-                </p>
-         </form>
-        </div>
-        <div class="info" id="info">
-            <h4>Segui a la Seleccion en sus redes oficiales:</h4>
-            <ul>
-                <br>
-                <li><i class="fab fa-instagram"></i><a href="https://www.instagram.com/afaseleccion/?hl=es" target="_blank">  Instagram</a></li>
-                <br>
-                <br>
-                <li><i class="fab fa-twitter"></i><a href="https://twitter.com/Argentina" target="_blank"> Twitter</a></li>
-            </ul>
-            <br>
-            <img src="IMG/messiPng.png" alt="Messi">
-         </div>
-        </div>
-
-         <!-- Footer -->
-        <footer class="footer">
-            <ul class="footer-ul redes">
+<body>
+    <!-- Nav -->
+    <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+    </div>
+    <div class="container">
+        <nav class="nav-main">
+            <img class="nav-brand" src="IMG/afa.png" alt="">
+            <ul class="nav-menu">
                 <li>
-                    <a target="_blank" href="#">
-                       <i class="fab fa-facebook-f"></i>
-                    </a>
+                    <a href="index.html">Inicio</a>
                 </li>
                 <li>
-                     <a target="_blank" href="#">
-                        <i class="fab fa-twitter"></i>
-                     </a>
-                    </li>
-                 <li>
-                     <a target="_blank" href="#">
-                        <i class="fab fa-instagram"></i>
-                     </a>
-                 </li>
-             </ul>
-            <ul class="footer-ul">
-                    <li>Telefono: +54 2223671540</li>
-                    <li><i class="fa-sharp fa-regular fa-copyright" style="color: #ffffff;"></i></li>
+                    <a href="galeria.html">Galeria</a>
+                </li>
+                <li>
+                    <a href="videos.html">Videos</a>
+                </li>
+                <li>
+                    <a href="contactanos.html">Contactanos</a>
+                </li>
             </ul>
-        </footer>
+            <ul class="nav-menu-right">
+                <li>
+                    <a href="#">
+                        <i class="fas fa-search"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Form -->
+    <main>
+        <div class="formi" id="formi">
+            <div class="form" id="form">
+                <form action="enviado.html" method="post" target="_blank">
+                    <h3>Contactanos</h3>
+                    <br>
+                    <p>
+                        <label>Nombre:</label>
+                        <input type="text" class="input" name="nombre" minlength="4" max="20" required=""
+                            pattern="[a-zA-Z]+">
+                    </p>
+                    <p>
+                        <label>Mail:</label>
+                        <input type="email" class="button" name="email">
+                    </p>
+                    <p>
+                        <label>Telefono:</label>
+                        <input type="tel" class="input" name="telefono">
+                    </p>
+                    <p>
+                        <label>Jugador Favorito:</label>
+                        <br>
+                        <br>
+                        <select>
+                            <option disabled selected="">Elija uno</option>
+                            <optgroup label="Arqueros"></optgroup>
+                            <option>Emiliano Martínez</option>
+                            <option>Gerónimo Rulli</option>
+                            <option>Franco Armani</option>
+                            <optgroup label="Defensores"></optgroup>
+                            <option>Nahuel Molina</option>
+                            <option>Gonzalo Montiel</option>
+                            <option>Cristian Romero</option>
+                            <option>Germán Pezzella</option>
+                            <option>Nicolás Otamendi</option>
+                            <option>Lisandro Martínez</option>
+                            <option>Marcos Acuña</option>
+                            <option>Nicolás Tagliafico</option>
+                            <optgroup label="Mediocampistas"></optgroup>
+                            <option>Juan Foyth</option>
+                            <option>Rodrigo De Paul</option>
+                            <option>Leandro Paredes</option>
+                            <option>Alexis Mac Allister</option>
+                            <option>Guido Rodríguez</option>
+                            <option>Alejandro Gómez</option>
+                            <option>Enzo Fernández</option>
+                            <option>Exequiel Palacios</option>
+                            <option>Thiago Almada</option>
+                            <optgroup label="Delanteros"></optgroup>
+                            <option>Lionel Messi</option>
+                            <option>Ángel Di María</option>
+                            <option>Lautaro Martínez</option>
+                            <option>Julián Álvarez</option>
+                            <option>Paulo Dybala</option>
+                            <option>Ángel Correa</option>
+                        </select>
+                    </p>
+                    <p class="block">
+                        <label>Mensaje para la Selección:</label>
+                        <textarea name="mensaje" class="textarea" rows="3" required=""></textarea>
+                    </p>
+                    <p class="block">
+                        <button type="submit">
+                            Enviar
+                        </button>
+                    </p>
+                </form>
+            </div>
+            <div class="info" id="info">
+                <h4>Segui a la Seleccion en sus redes oficiales:</h4>
+                <ul>
+                    <br>
+                    <li><i class="fab fa-instagram"></i><a href="https://www.instagram.com/afaseleccion/?hl=es"
+                            target="_blank"> Instagram</a></li>
+                    <br>
+                    <br>
+                    <li><i class="fab fa-twitter"></i><a href="https://twitter.com/Argentina" target="_blank">
+                            Twitter</a>
+                    </li>
+                </ul>
+                <br>
+                <img src="IMG/messiPng.png" alt="Messi">
+            </div>
+        </div>
     </main>
-        <script src="/JS/fotos.js"></script>
-        <script src="/JS/script.js"></script>
-    </body>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <ul class="footer-ul redes">
+            <li>
+                <a target="_blank" href="#">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+            </li>
+            <li>
+                <a target="_blank" href="#">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a target="_blank" href="#">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </li>
+        </ul>
+        <ul class="footer-ul">
+            <li>Telefono: +54 2223671540</li>
+            <li><i class="fa-sharp fa-regular fa-copyright"></i></li>
+        </ul>
+    </footer>
+    <script src="/JS/fotos.js"></script>
+    <script src="/JS/script.js"></script>
+</body>
+
 </html>
