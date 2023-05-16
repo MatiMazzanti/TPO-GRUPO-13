@@ -1,0 +1,229 @@
+:root {
+    --amarillo: #cf870d;
+    --celeste: #74acdf;
+    --blanco: #ffffff;
+    --letra1: 'Montserrat', sans-serif;
+    ;
+    --letra2: 'Noto Sans', sans-serif;
+    ;
+}
+
+/* General */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--celeste);
+    font-size: 16px;
+    font-family: var(--letra1);
+}
+
+a {
+    color: var(--blanco);
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+h1 {
+    color: var(--blanco);
+    text-align: center;
+    position: relative;
+    width: 80%;
+    margin: 20px auto;
+    font-family: var(--letra2);
+    font-weight: bold;
+    background-color: var(--amarillo);
+    border-radius: 30px;
+}
+
+/* Navegacion */
+.nav-main {
+    z-index: 3;
+    background-color: var(--amarillo);
+    border-radius: 30px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 20px 0;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.nav-brand {
+    width: 50px;
+}
+
+.nav-main ul {
+    display: flex;
+
+}
+
+.nav-main ul li {
+    padding: 10px;
+
+}
+
+.nav-main ul li a {
+    padding: 5px;
+}
+
+.nav-main ul li a:hover {
+    color: var(--celeste);
+}
+
+.nav-main ul.nav-menu {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.menu-btn {
+    position: absolute;
+    cursor: pointer;
+    top: 25px;
+    right: 45px;
+    z-index: 2;
+    font-size: 1.5rem;
+    display: none;
+    color: var(--blanco);
+}
+
+/* Footer*/
+.footer {
+    display: flex;
+    color: var(--blanco);
+    font-weight: bold;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--amarillo);
+    height: 60px;
+    padding: 20px 0;
+    margin: 0 auto;
+    border-radius: 30px;
+    font-size: 15px;
+}
+
+.footer-ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 25%;
+    padding: 20px;
+}
+
+.redes {
+    font-size: 20px;
+}
+
+@media (max-width: 700px) {
+
+    /*Navegador*/
+    .nav-main {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .new {
+        grid-template-columns: repeat(2, 1fr);
+        font-weight: bold;
+    }
+
+    .nav-main ul.nav-menu {
+        z-index: 1;
+        display: block;
+        position: absolute;
+        background-color: var(--amarillo);
+        top: 0;
+        left: 0;
+        font-size: 17px;
+        opacity: .7;
+        height: 100%;
+        transform: translate(-500px);
+        padding: 30px;
+        transition: transform .5s ease-in-out;
+    }
+
+    .nav-main ul.nav-menu.show {
+        transform: translate(-20px);
+    }
+
+    .nav-main ul.nav-menu li {
+        padding: 30px;
+    }
+
+    .nav-main ul.nav-menu-right {
+        margin-right: 40px;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    /*Footer*/
+    .footer-ul {
+        font-size: 15px;
+        width: 40%;
+    }
+}
+
+@media (max-width: 650px) {
+    .footer-ul {
+        font-size: 10px;
+        width: 50%;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 15px;
+    }
+}
+
+.prox-partidos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+.partidos1,
+.partidos2,
+h2 {
+    text-align: center;
+}
+
+.partidos1 {
+    grid-area: 1 / 1;
+}
+
+.par-logos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    margin-bottom: 1.875rem;
+}
+
+.logofoto {
+    width: 4.375rem;
+}
+
+hr {
+    margin: .625rem 0rem 1.875rem 0rem;
+    border-color: black;
+}
