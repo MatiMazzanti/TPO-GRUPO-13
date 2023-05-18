@@ -227,3 +227,44 @@ hr {
     margin: .625rem 0rem 1.875rem 0rem;
     border-color: black;
 }
+
+.seleccion {
+    width: 100%;
+    margin-bottom: .9375rem;
+}
+
+.h2_index {
+    margin: 35px 0rem;
+}
+
+.copas {
+    display: grid;
+    grid-template-columns: repeat(3, 18.75rem);
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+}
+
+.copas_copa {
+    transition: transform 0.3s ease;
+    border: 2px solid #D1B67E;
+    border-radius: .9375rem;
+    background-color: #d1b57e41;
+    padding: 1.875rem;
+    display: grid;
+    align-content: center;
+    justify-items: center;
+}
+
+.copas_copa:hover {
+    transform: scale(1.05);
+    background-color: #d1b57e96;
+}
+
+.copas_copa h3 {
+    margin-top: .9375rem;
+}
+
+.footer_h2 {
+    margin: 2.8125rem 0rem .625rem 0rem;
+}
