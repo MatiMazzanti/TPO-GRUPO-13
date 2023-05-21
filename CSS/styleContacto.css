@@ -2,33 +2,40 @@
     --amarillo: #cf870d;
     --celeste: #74acdf;
     --blanco: #ffffff;
-    --letra1: 'Montserrat', sans-serif;;
-    --letra2:  'Noto Sans', sans-serif;;
+    --letra1: 'Montserrat', sans-serif;
+    ;
+    --letra2: 'Noto Sans', sans-serif;
+    ;
 }
+
 /* General */
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     background-color: var(--celeste);
     font-size: 16px;
     font-family: var(--letra1);
 }
-a{
+
+a {
     color: var(--blanco);
     text-decoration: none;
 }
-ul{
+
+ul {
     list-style: none;
 }
 
-.container{
+.container {
     width: 90%;
     margin: auto;
 }
-h1{
+
+h1 {
     color: var(--blanco);
     text-align: center;
     position: relative;
@@ -39,14 +46,16 @@ h1{
     background-color: var(--amarillo);
     border-radius: 30px;
 }
-h2{
+
+h2 {
     text-align: center;
     position: relative;
     width: 80%;
     margin: 50px auto;
     color: var(--blanco);
 }
-h2::before{
+
+h2::before {
     content: "";
     display: block;
     width: 100%;
@@ -56,13 +65,14 @@ h2::before{
     top: 50%;
     z-index: -1;
 }
-h2 span{
-    background-color: rgba(207,135,13, .85);
+
+h2 span {
+    background-color: rgba(207, 135, 13, .85);
     padding: 0 15px;
 }
 
 /* Navegacion */
-.nav-main{
+.nav-main {
     z-index: 3;
     background-color: var(--amarillo);
     border-radius: 30px;
@@ -76,28 +86,34 @@ h2 span{
     font-weight: bold;
 }
 
-.nav-brand{
+.nav-brand {
     width: 50px;
 }
-.nav-main ul{
+
+.nav-main ul {
     display: flex;
 
 }
-.nav-main ul li{
+
+.nav-main ul li {
     padding: 10px;
 
 }
-.nav-main ul li a{
+
+.nav-main ul li a {
     padding: 5px;
 }
-.nav-main ul li a:hover{
+
+.nav-main ul li a:hover {
     color: var(--celeste);
 }
-.nav-main ul.nav-menu{
+
+.nav-main ul.nav-menu {
     flex: 1;
     margin-left: 20px;
 }
-.menu-btn{
+
+.menu-btn {
     position: absolute;
     cursor: pointer;
     top: 25px;
@@ -170,6 +186,7 @@ h2 span{
     border-radius: 30px;
     font-size: 15px;
 }
+
 .footer-ul {
     display: flex;
     justify-content: space-between;
@@ -177,25 +194,30 @@ h2 span{
     width: 25%;
     padding: 20px;
 }
+
 .redes {
     font-size: 20px;
 }
-@media (max-width: 700px){
+
+@media (max-width: 700px) {
+
     /*Navegador*/
-    .nav-main{
+    .nav-main {
         font-size: 20px;
         font-weight: bold;
-    }  
-    .new{
-        grid-template-columns: repeat(2,1fr);
+    }
+
+    .new {
+        grid-template-columns: repeat(2, 1fr);
         font-weight: bold;
     }
-    .nav-main ul.nav-menu{
+
+    .nav-main ul.nav-menu {
         z-index: 1;
         display: block;
         position: absolute;
         background-color: var(--amarillo);
-        top:0;
+        top: 0;
         left: 0;
         font-size: 17px;
         opacity: .7;
@@ -204,34 +226,42 @@ h2 span{
         padding: 30px;
         transition: transform .5s ease-in-out;
     }
-    .nav-main ul.nav-menu.show{
+
+    .nav-main ul.nav-menu.show {
         transform: translate(-20px);
     }
-    .nav-main ul.nav-menu li{
+
+    .nav-main ul.nav-menu li {
         padding: 30px;
     }
-    .nav-main ul.nav-menu-right{
+
+    .nav-main ul.nav-menu-right {
         margin-right: 40px;
         font-size: 1.5rem;
         font-weight: bold;
     }
-    .menu-btn{
+
+    .menu-btn {
         display: block;
     }
+
     /*Footer*/
     .footer-ul {
         font-size: 15px;
         width: 40%;
     }
 }
-@media (max-width: 650px){
+
+@media (max-width: 650px) {
     .footer-ul {
         font-size: 10px;
         width: 50%;
     }
+
     h1 {
         font-size: 20px;
     }
+
     h2 {
         font-size: 15px;
     }
@@ -243,8 +273,6 @@ h2 span{
     padding: 1em;
     margin: 0;
     color: white
-
-
 }
 
 .formi h3 {
@@ -273,9 +301,13 @@ h2 span{
 
 .formi form button {
 
-    background: #00B4DB;  /* fallback for old browsers */ /* degradado sacado de https://uigradients.com/#BlueRaspberry */
-    background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #00B4DB;
+    /* fallback for old browsers */
+    /* degradado sacado de https://uigradients.com/#BlueRaspberry */
+    background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0083B0, #00B4DB);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border: 0;
     text-transform: uppercase;
     margin: 1em;
@@ -288,7 +320,7 @@ h2 span{
     margin: 0;
 }
 
-.info p{
+.info p {
     font-size: 18px;
 }
 
@@ -302,7 +334,7 @@ h2 span{
     grid-column: 1/3;
 }
 
-.form { 
+.form {
     box-sizing: border-box;
     padding: 1.5em;
     margin: 0;
@@ -310,39 +342,50 @@ h2 span{
     margin-right: auto;
     max-width: 1170px;
     background-color: #cf870d;
-    box-shadow:rgba(0, 0, 0, 0.9);
+    box-shadow: rgba(0, 0, 0, 0.9);
 
 
 }
 
 .formi form button:hover,
 .formi form button:focus {
-    background: #0083B0;  /* fallback for old browsers */ /* degradado sacado de https://uigradients.com/#BlueRaspberry */
-    background: -webkit-linear-gradient(to right, #00B4DB, #0083B0);  /* Chrome 10-25, Safari 5.1-6 */ 
-    background: linear-gradient(to right, #00B4DB, #0083B0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #0083B0;
+    /* fallback for old browsers */
+    /* degradado sacado de https://uigradients.com/#BlueRaspberry */
+    background: -webkit-linear-gradient(to right, #00B4DB, #0083B0);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #00B4DB, #0083B0);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     transition: background-color 1s ease-out;
     outline: 0;
 }
 
-.info { 
+.info {
     box-sizing: border-box;
     padding: 3em;
     margin-left: auto;
     margin-right: auto;
     max-width: 1170px;
     background-color: #FDC830;
-    box-shadow:rgba(0, 0, 0, 0.9);
-    background: #FDC830;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, rgba(207,135,13, .85), #F37335);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, rgba(207,135,13, .85), #F37335); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    box-shadow: rgba(0, 0, 0, 0.9);
+    background: #FDC830;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, rgba(207, 135, 13, .85), #F37335);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, rgba(207, 135, 13, .85), #F37335);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 
 .info:hover,
 .info:focus {
-    background: #FDC830;  /* fallback for old browsers */ /* degradado sacado de https://uigradients.com/#BlueRaspberry */
-    background: -webkit-linear-gradient(to right, #F37335), rgba(207,135,13, .85);  /* Chrome 10-25, Safari 5.1-6 */ 
-    background: linear-gradient(to right, #F37335), rgba(207,135,13, .85); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #FDC830;
+    /* fallback for old browsers */
+    /* degradado sacado de https://uigradients.com/#BlueRaspberry */
+    background: -webkit-linear-gradient(to right, #F37335), rgba(207, 135, 13, .85);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F37335), rgba(207, 135, 13, .85);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     transition: background-color 1s ease-out;
     outline: 0;
 }
@@ -350,9 +393,13 @@ h2 span{
 .enviado {
     margin: 0;
     align-content: center;
-    background: #cf870d;  /* fallback for old browsers */ /* degradado sacado de https://uigradients.com/#BlueRaspberry */
-    background: -webkit-linear-gradient(to right, #cf870d), #F37335;  /* Chrome 10-25, Safari 5.1-6 */ 
-    background: linear-gradient(to right, #cf870d), #F37335; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #cf870d;
+    /* fallback for old browsers */
+    /* degradado sacado de https://uigradients.com/#BlueRaspberry */
+    background: -webkit-linear-gradient(to right, #cf870d), #F37335;
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #cf870d), #F37335;
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     font-size: 32px;
     color: white;
     padding: 1em;
@@ -363,16 +410,20 @@ h2 span{
 
 
 
-.enviado button{
+.enviado button {
     background: #00B4DB;
 
 }
 
 .enviado button:hover,
 .enviado button:focus {
-    background: #0083B0;  /* fallback for old browsers */ /* degradado sacado de https://uigradients.com/#BlueRaspberry */
-    background: -webkit-linear-gradient(to right, #00B4DB, #0083B0);  /* Chrome 10-25, Safari 5.1-6 */ 
-    background: linear-gradient(to right, #00B4DB, #0083B0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #0083B0;
+    /* fallback for old browsers */
+    /* degradado sacado de https://uigradients.com/#BlueRaspberry */
+    background: -webkit-linear-gradient(to right, #00B4DB, #0083B0);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #00B4DB, #0083B0);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     transition: background-color 1s ease-out;
     outline: 0;
 
@@ -381,16 +432,20 @@ h2 span{
 
 /* pantalla grande */
 @media(min-width: 700px) {
-    body{
+    body {
         padding: 4rem;
     }
+
     .formi {
         display: grid;
         grid-template-columns: 2fr 1fr;
 
     }
 
-    .formi p,h3,h4,ul {
+    .formi p,
+    h3,
+    h4,
+    ul {
         padding: 2em;
 
     }
@@ -400,8 +455,8 @@ h2 span{
         margin-right: auto;
 
     }
+
     .footer {
         align-items: center;
     }
 }
-
