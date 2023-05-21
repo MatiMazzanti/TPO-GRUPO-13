@@ -1,9 +1,9 @@
 const fulimgbox = document.getElementById("fulimgbox");
 fulimg = document.getElementById("fulimg");
-function openImg(reference){
+function openImg(reference) {
     fulimgbox.style.display = "flex";
     fulimg.src = reference;
 }
-function closeImg(){
+function closeImg() {
     fulimgbox.style.display = "none";
 }
