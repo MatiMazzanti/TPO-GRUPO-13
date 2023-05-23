@@ -432,21 +432,9 @@ h2 span {
 
 /* pantalla grande */
 @media(min-width: 700px) {
-    body {
-        padding: 4rem;
-    }
-
     .formi {
         display: grid;
         grid-template-columns: 2fr 1fr;
-
-    }
-
-    .formi p,
-    h3,
-    h4,
-    ul {
-        padding: 2em;
 
     }
 
@@ -459,4 +447,18 @@ h2 span {
     .footer {
         align-items: center;
     }
+}
+
+/* validacion por medio de js */
+
+#nombre {
+    border-color: white;
+}
+
+#email {
+    border-color: white;
+}
+
+#telefono {
+    border-color: white;
 }
