@@ -56,7 +56,8 @@
     <main>
         <div class="formi" id="formi">
             <div class="form" id="form">
-                <form action="enviado.html" method="post" target="_blank">
+                <!-- Consumo de API para envio de mail -->
+                <form action="https://formsubmit.co/gonzalomanrique23@gmail.com" method="POST" />
                     <h3>Contactanos</h3>
                     <br>
                     <p>
@@ -119,6 +120,13 @@
                             Enviar
                         </button>
                     </p>
+                    <!-- redirigo a pagina principal -->
+                    <input type="hidden" name="_next" value="https://matimazzanti.github.io/TPO-GRUPO-13/">
+                    <!-- saco el captcha -->
+                    <input type="hidden" name="_captcha" value="false">
+                    <!-- cambio el asunto del mail-->
+                    <input type="hidden" name="_subject" value="envio desde web GRUPO 13 CODO a CODO!">
+                    
                 </form>
             </div>
             <div class="info" id="info">
