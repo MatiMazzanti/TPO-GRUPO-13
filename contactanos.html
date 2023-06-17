@@ -27,7 +27,7 @@
     </div>
     <div class="container">
         <nav class="nav-main">
-            <img class="nav-brand" src="IMG/afa.webp" alt="">
+            <img class="nav-brand" src="IMG/afa.png" alt="">
             <ul class="nav-menu">
                 <li>
                     <a href="index.html">Inicio</a>
@@ -56,22 +56,21 @@
     <main>
         <div class="formi" id="formi">
             <div class="form" id="form">
-                <!-- Consumo de API para envio de mail -->
-                <form action="https://formsubmit.co/gonzalomanrique23@gmail.com" method="POST" />
+                <form action="enviado.html" method="post" target="_blank">
                     <h3>Contactanos</h3>
                     <br>
                     <p>
                         <label>Nombre:</label>
-                        <input type="text" class="nombre" name="nombre" minlength="6" max="20" required=""
-                            pattern="[a-zA-Z]+" id="nombre">
+                        <input type="text" class="input" name="nombre" minlength="4" max="20" required=""
+                            pattern="[a-zA-Z]+">
                     </p>
                     <p>
                         <label>Mail:</label>
-                        <input type="email" class="email" name="email" id="email">
+                        <input type="email" class="button" name="email">
                     </p>
                     <p>
                         <label>Telefono:</label>
-                        <input type="tel" class="telefono" name="telefono" id="telefono">
+                        <input type="tel" class="input" name="telefono">
                     </p>
                     <p>
                         <label>Jugador Favorito:</label>
@@ -110,37 +109,9 @@
                             <option>Paulo Dybala</option>
                             <option>Ángel Correa</option>
                         </select>
-                        <br>
-                        <br>
-                        <div class="container">
-                        <h2>Desde Donde Nos Escribes:</h2>
-                        <label>Provincias</label>
-                        <br>
-                        <select id="selectProvincias">
-                          <option value="Elige una provincia">Elige una provincia</option>
-                        </select>
-                        <span></span>
-                        <br>
-                        <label>Municipios</label>
-                        <br>
-                        <select id="selectMunicipios">
-                          <option value="Elige un municipio">Elige un municipio</option>
-                        </select>
-                        <span></span>
-                        <br>
-                        <label>Localidades</label>
-                        <br>
-                        <select id="selectLocalidades">
-                          <option value="Elige una localidad">Elige una localidad</option>
-                        </select>
-                        <span></span>
-                        </div>
-                        <div class="container">
-                            <img src="https://flagcdn.com/160x120/ar.png" alt="Argentina">
-                        </div>
                     </p>
                     <p class="block">
-                        <h2>Mensaje para la Selección:</h2>
+                        <label>Mensaje para la Selección:</label>
                         <textarea name="mensaje" class="textarea" rows="3" required=""></textarea>
                     </p>
                     <p class="block">
@@ -148,13 +119,6 @@
                             Enviar
                         </button>
                     </p>
-                    <!-- redirigo a pagina principal -->
-                    <input type="hidden" name="_next" value="https://matimazzanti.github.io/TPO-GRUPO-13/">
-                    <!-- saco el captcha -->
-                    <input type="hidden" name="_captcha" value="false">
-                    <!-- cambio el asunto del mail-->
-                    <input type="hidden" name="_subject" value="envio desde web GRUPO 13 CODO a CODO!">
-                    
                 </form>
             </div>
             <div class="info" id="info">
@@ -170,7 +134,7 @@
                     </li>
                 </ul>
                 <br>
-                <img src="IMG/messiPng.webp" alt="Messi">
+                <img src="IMG/messiPng.png" alt="Messi">
             </div>
         </div>
     </main>
@@ -199,7 +163,8 @@
             <li><i class="fa-sharp fa-regular fa-copyright"></i></li>
         </ul>
     </footer>
-    <script src="JS/script.js"></script>
+    <script src="/JS/fotos.js"></script>
+    <script src="/JS/script.js"></script>
 </body>
 
 </html>
